@@ -16,7 +16,16 @@
   <div id="contents">
     <h2>Articles</h2>
     <table>
-		<!-- ここに article の一覧を表示する -->
+		<thead>
+			<tr>
+				<th>Title</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="article : ${articles}">
+				<td class="center" th:text="${article.title}"></td>
+			</tr>
+		</tbody>
 	</table>
 	<br>
 	 <a href="/" class="btn btn-secondary mb-2">Return</a>
