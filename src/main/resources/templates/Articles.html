@@ -15,15 +15,16 @@
   </header>
   <div id="contents">
     <h2>Articles</h2>
-    <table>
+    <table class="table">
 		<thead>
 			<tr>
-				<th>Title</th>
+				<th>Title</th><th>Link</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr th:each="article : ${articles}">
 				<td class="center" th:text="${article.title}"></td>
+				<td><a href="/detail">LINK</a></td>
 			</tr>
 		</tbody>
 	</table>
